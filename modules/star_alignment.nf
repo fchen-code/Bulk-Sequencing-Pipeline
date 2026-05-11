@@ -19,7 +19,7 @@ process star_alignment {
 	--readFilesIn ${files.join(' ')} \
 	--genomeDir ${star} \
 	--outSAMtype BAM SortedByCoordinate \
-	--outSAMattrRGline ID:${meta.id} SM:${meta.name} PL:ILLUMINA \
+	--outSAMattrRGline ID:${meta.id} SM:${meta.name} \
 	--outFileNamePrefix ${meta.id}. \
 	--readFilesCommand zcat
 	"""
